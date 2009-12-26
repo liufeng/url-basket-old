@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>URL Basket</title>
+  </head>
+
+  <body>
+    <form action="/add" method="post">
+      Add new link: 
+      <input type="text" name="url" size="100" />
+      <input type="submit" name="add" value="add" />
+    </form>
+
+    <ul>
+      {% for url in urls %}
+      <li>
+        {% if url.title %}
+        <a href="{{ url.url }}">{{ url.title }}</a>
+        {% else %}
+        <a href="{{ url.url }}">{{ url.url }}</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

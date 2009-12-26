@@ -1,0 +1,14 @@
+url-basket
+==========
+
+This is an application works on Google App Engine.
+
+Sometimes I open too many tabs in my browser and don't have enough
+time to read them all. So I keep them in the browser, but that makes
+my machine slow. So I'd like a place for saving these URLs
+temporarily. A text file is not good enought, because I want to get
+the URLs easily in anywhere. So I created this web application.
+
+This application is under the BSD license.
+
+Feng Liu <liufeng@cnliufeng.com>
