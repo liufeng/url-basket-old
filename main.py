@@ -31,7 +31,7 @@ class AddLink(webapp.RequestHandler):
   def post(self):
     newLink = URLEntity()
     url = self.request.get('url')
-    if url[0:4] != 'http' url[0:3] != 'ftp':
+    if url[0:4] != 'http' or url[0:3] != 'ftp':
       url = 'http://' + url
     newLink.url = url
     newLink.title = self.getTitle(url)
